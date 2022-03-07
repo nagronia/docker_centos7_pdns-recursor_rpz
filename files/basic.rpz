@@ -1,0 +1,15 @@
+TTL 300
+$ORIGIN         localhost.local.rpz.
+@       SOA     localhost.local.rpz. dns.local.rpz ( 
+                2022030701      ; Serial Number 
+                60              ; Refresh every 1 min
+                60              ; Retry every 1 min 
+                432000          ; Expire every 5 days 
+                60 )            ; Negactive caching ttl 1 min
+        NS      localhost.local.rpz. 
+
+
+; begin RPZ RR definitions
+
+example.net A 192.168.2.5
+*.example.net A 192.168.2.5
