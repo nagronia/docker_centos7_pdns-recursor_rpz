@@ -1,1 +1,1 @@
-rpzFile("basic.rpz", {})
+rpzFile("/etc/pdns-recursor/local.rpz", {})

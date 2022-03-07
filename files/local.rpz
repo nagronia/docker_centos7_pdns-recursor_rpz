@@ -1,4 +1,4 @@
-TTL 300
+$TTL 300
 $ORIGIN         localhost.local.rpz.
 @       SOA     localhost.local.rpz. dns.local.rpz ( 
                 2022030701      ; Serial Number 
