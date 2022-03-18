@@ -16,7 +16,6 @@ RUN cp /etc/pdns-recursor/recursor.conf  /etc/pdns-recursor/recursor.conf.origin
 
 ## Copy the containers config file with basic settings that refer to recursor.d folder. 
 COPY ./files/recursor.conf /etc/pdns-recursor/recursor.conf
-
 COPY ./files/config.lua /etc/pdns-recursor/config.lua
 COPY ./files/local.rpz /etc/pdns-recursor/local.rpz
 
