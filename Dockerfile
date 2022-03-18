@@ -18,7 +18,7 @@ RUN cp /etc/pdns-recursor/recursor.conf  /etc/pdns-recursor/recursor.conf.origin
 COPY ./files/recursor.conf /etc/pdns-recursor/recursor.conf
 
 COPY ./files/config.lua /etc/pdns-recursor/config.lua
-COPY ./files/basic.rpz /etc/pdns-recursor/local.rpz
+COPY ./files/local.rpz /etc/pdns-recursor/local.rpz
 
 ## Make sure the recursor.d folder is created. 
 RUN mkdir -p /etc/pdns-recursor/recursor.d/
